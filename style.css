@@ -1,0 +1,233 @@
+   
+   #navbar{
+    background: beige;
+   }
+  .about{
+    background: beige;
+  }
+   .ab{
+    margin: 20px;
+   }
+   .img{
+    flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 10px;
+   }
+   .review{
+    background: beige(245, 220, 220);
+   }
+   .MENU{
+    background: beige;
+   }
+   .xy{
+    margin-left: 70px;
+   }
+   .horizontal-scroll {
+  display: flex;
+  overflow-x: 10;
+  scroll-snap-type: x mandatory;
+  gap: 20px;
+  padding: 20px;
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
+ 
+.flip-container-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* spacing between flip cards */
+  flex-wrap: wrap; /* wrap to next line on small screens */
+}
+
+.flip-container {
+  perspective: 1000px;
+  width: 300px;
+  height: 300px;
+}
+
+.flipper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+}
+
+.flip-container:hover .flipper {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.front img, .back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.back {
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: beige; /* Optional, just to make the back text look nice */
+}
+.menu{
+  padding-left: 30px;
+}
+.btn{
+  margin-left: 500px;
+}
+.reserve{
+  background: beige;
+}
+
+/* ===== Reservation Modal Styling ===== */
+
+.modal-content {
+  border-radius: 16px;
+  border: none;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+.modal-body {
+  background-color: #faf7f2;
+  padding: 30px;
+}
+
+.modal-title {
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+.reservation-subtext {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Inputs */
+#reservationForm .form-control,
+#reservationForm .form-select {
+  border-radius: 10px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+}
+
+#reservationForm .form-control:focus,
+#reservationForm .form-select:focus {
+  border-color: #8b6f4e;
+  box-shadow: 0 0 0 0.15rem rgba(139, 111, 78, 0.25);
+}
+
+/* Button */
+.reserve-btn {
+  width: 100%;
+  max-width: 420px;
+  background-color: #1f7a4d;
+  border: none;
+  border-radius: 12px;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.reserve-btn:hover {
+  background-color: #16603c;
+  transform: translateY(-1px);
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fefaf5;
+  color: #222;
+}
+
+.events-section {
+  padding: 40px;
+}
+
+.events-container {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.events-image img {
+  max-width: 100%;
+  height: auto;
+  width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  margin-top: 60px;
+}
+
+.events-content {
+  max-width: 450px;
+  margin-top: 170px;
+}
+
+.events-content h2 {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.events-content h3 {
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 500;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+.event-item {
+  margin-bottom: 25px;
+}
+
+.event-item p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.event-item small {
+  color: #666;
+  display: block;
+  margin-top: 5px;
+  line-height: 1.5;
+}
+
+.book-btn {
+  padding: 12px 30px;
+  background: transparent;
+  border: 2px solid #222;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+  margin-top: 20px;
+}
+
+.book-btn:hover {
+  background-color: #222;
+  color: white;
+}
+.navbars{
+padding-left: 30px;
+}
+
+
